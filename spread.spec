@@ -1,7 +1,7 @@
 
 #
 # todo:
-# - add spread user and group
+# - add spread user and group or maybe run it as nobody?
 # - change default config file: logging, etc. 
 #
 
