@@ -1,4 +1,10 @@
+
 #
+# todo:
+# - add spread user and group
+# - change default config file: logging, etc. 
+#
+
 Summary:	Toolkit that provides a high performance messaging service that is resilient to faults across external or internal networks
 Name:		spread
 Version:	3.17.3
