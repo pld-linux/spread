@@ -7,7 +7,6 @@ Epoch:		0
 License:	BSD-like
 Group:		Development
 Source0:	http://www.cnds.jhu.edu/download/download_spread.cgi/%{name}-src-%{version}.tar.gz
-# Source0-md5:	2eec25b5adc96fd840aa251e44325f9f
 # check the license first before removing line below
 NoSource:	0
 URL:		http://www.spread.com/
