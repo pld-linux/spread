@@ -8,13 +8,14 @@
 Summary:	Toolkit that provides a high performance messaging service that is resilient to faults across external or internal networks
 Name:		spread
 Version:	3.17.3
-Release:	0.1
+Release:	0.2
 Epoch:		0
 License:	BSD-like
 Group:		Development
 Source0:	http://www.cnds.jhu.edu/download/download_spread.cgi/%{name}-src-%{version}.tar.gz
 # check the license first before removing line below
 NoSource:	0
+Patch0:		%{name}-soname.patch
 URL:		http://www.spread.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -55,6 +56,7 @@ Static Spread client library.
 
 %prep
 %setup	-q	-n %{name}-src-%{version}
+%patch0 -p1
 
 %build
 %configure2_13
