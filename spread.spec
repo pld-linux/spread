@@ -5,7 +5,8 @@
 # - change default config file: logging, etc. 
 #
 
-Summary:	Toolkit that provides a high performance messaging service that is resilient to faults across external or internal networks
+Summary:	High performance messaging service toolkit resilient to faults across networks
+Summary(pl):	Zestaw narz±dzi do wydajnej komunikacji odpornej na defekty sieci
 Name:		spread
 Version:	3.17.3
 Release:	0.2
@@ -22,42 +23,69 @@ URL:		http://www.spread.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Spread is a toolkit that provides a high performance messaging service that
-is resilient to faults across external or internal networks. Spread
-functions as a unified message bus for distributed applications, and
-provides highly tuned application-level multicast and group communication
-support. Spread services range from reliable message passing to fully
-ordered messages with delivery guarantees, even in case of computer
-failures and network partitions. Spread is designed to encapsulate the
-challenging aspects of asynchronous networks and enable the construction of
-scalable distributed applications, allowing application builders to focus
-on the differentiating components of their application. 
+Spread is a toolkit that provides a high performance messaging service
+that is resilient to faults across external or internal networks.
+Spread functions as a unified message bus for distributed
+applications, and provides highly tuned application-level multicast
+and group communication support. Spread services range from reliable
+message passing to fully ordered messages with delivery guarantees,
+even in case of computer failures and network partitions. Spread is
+designed to encapsulate the challenging aspects of asynchronous
+networks and enable the construction of scalable distributed
+applications, allowing application builders to focus on the
+differentiating components of their application. 
+
+%description -l pl
+Spread to zestaw narzêdzi zapewniaj±cych wysoko wydajn± komunikacjê
+odporn± na defekty zarówno zewnêtrznych, jak i wewnêtrznych sieci.
+Spread funkcjonuje jako ujednolicony kana³ komunikacji dla
+rozproszonych aplikacji i dostarcza dobrze dostrojon± obs³ugê
+multicastów i komunikacji grupowej na poziomie aplikacji. Us³ugi
+Spreada obejmuj± zakres od niezawodnego przekazywania wiadomo¶ci do
+ca³kowicie uporz±dkowanych wiadomo¶ci z gwarancj± dostarczenia,
+nawet w przypadku awarii komputera czy podzia³ów sieci. Spread jest
+zaprojektowany do opakowywania wyzywaj±cych aspektów sieci
+asynchronicznych i umo¿liwienia tworzenia skalowanych, rozproszonych
+aplikacji, umo¿liwiaj±c twórcom aplikacji skupienie siê na ró¿ni±cych
+siê komponentach ich aplikacji.
 
 %package libs
 Summary:	Spread client library
+Summary(pl):	Biblioteka kliencka Spreada
 Group:		Libraries
 
 %description libs
 Spread client library.
 
+%description libs -l pl
+Biblioteka kliencka Spreada.
+
 %package devel
 Summary:	Header files for Spread client library
+Summary(pl):	Pliki nag³ówkowe biblioteki klienckiej Spreada
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
 %description devel
 Header files for Spread client library.
 
+%description devel -l pl
+Pliki nag³ówkowe biblioteki klienckiej Spreada.
+
 %package static
 Summary:	Static Spread client library
+Summary(pl):	Statyczna biblioteka kliencka Spreada
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Spread client library.
 
+%description static -l pl
+Statyczna biblioteka kliencka Spreada.
+
 %prep
-%setup	-q	-n %{name}-src-%{version}
+%setup -q -n %{name}-src-%{version}
 %patch0 -p1
 
 %build
@@ -73,8 +101,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post	libs	-p /sbin/ldconfig
-%postun	libs	-p /sbin/ldconfig
+%post	libs -p /sbin/ldconfig
+%postun	libs -p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
