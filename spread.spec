@@ -10,9 +10,11 @@ Name:		spread
 Version:	3.17.3
 Release:	0.2
 Epoch:		0
-License:	BSD-like
+License:	BSD-like, with restrictions
 Group:		Development
-Source0:	http://www.cnds.jhu.edu/download/download_spread.cgi/%{name}-src-%{version}.tar.gz
+# from http://www.cnds.jhu.edu/download/download_spread.cgi
+# (No direct URL)
+Source0:	%{name}-src-%{version}.tar.gz
 # check the license first before removing line below
 NoSource:	0
 Patch0:		%{name}-soname.patch
