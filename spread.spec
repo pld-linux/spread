@@ -10,7 +10,6 @@ Source0:	http://www.cnds.jhu.edu/download/download_spread.cgi/%{name}-src-%{vers
 # check the license first before removing line below
 NoSource:	0
 URL:		http://www.spread.com/
-Requires:	%{name}-libs = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -26,27 +25,27 @@ scalable distributed applications, allowing application builders to focus
 on the differentiating components of their application. 
 
 %package libs
-Summary:	Spread library
+Summary:	Spread client library
 Group:		Libraries
 
 %description libs
-Spread library.
+Spread client library.
 
 %package devel
-Summary:	Header files for Spread library
+Summary:	Header files for Spread client library
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
 %description devel
-Header files for Spread library.
+Header files for Spread client library.
 
 %package static
-Summary:	Static Spread library
+Summary:	Static Spread client library
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
-Static Spread library.
+Static Spread client library.
 
 %prep
 %setup	-q	-n %{name}-src-%{version}
@@ -63,6 +62,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post	libs	-p /sbin/ldconfig
+%postun	libs	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
