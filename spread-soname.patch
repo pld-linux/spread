@@ -1,0 +1,20 @@
+--- spread-src-3.17.3/Makefile.in.orig	2005-02-23 14:28:32.000654256 +0100
++++ spread-src-3.17.3/Makefile.in	2005-02-23 14:28:34.357295992 +0100
+@@ -128,7 +128,7 @@
+ 	(cd $(DESTDIR)$(libdir); $(SOFTLINK) -f libspread.$(LIBVERSION).dylib libspread.dylib)
+ 
+ libspread.so:	$(LIBSP_SHOBJS)
+-	$(SHLD) -o $@ $(LIBSP_SHOBJS) $(SHLDFLAGS) $(SHLIBS)
++	$(SHLD) -o $@ $(LIBSP_SHOBJS) $(SHLDFLAGS) $(SHLIBS) -Wl,-soname,libspread.so.$(LIBVERSION)
+ 
+ install-libspread.so:	libspread.so
+ 	$(INSTALL) -m 0755 libspread.so $(DESTDIR)$(libdir)/libspread.so.$(LIBVERSION)
+@@ -147,7 +147,7 @@
+ 	(cd $(DESTDIR)$(libdir); $(SOFTLINK) -f libtspread.$(LIBVERSION).dylib libtspread.dylib)
+ 
+ libtspread.so:	$(LIBTSP_SHOBJS)
+-	$(SHLD) -o $@ $(LIBTSP_SHOBJS) $(SHLDFLAGS) $(SHLIBS) $(THLIBS)
++	$(SHLD) -o $@ $(LIBTSP_SHOBJS) $(SHLDFLAGS) $(SHLIBS) $(THLIBS) -Wl,-soname,libstpread.so.$(LIBVERSION)
+ 
+ install-libtspread.so:	libtspread.so
+ 	$(INSTALL) -m 0755 libtspread.so $(DESTDIR)$(libdir)/libtspread.so.$(LIBVERSION)
