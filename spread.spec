@@ -9,15 +9,14 @@ Summary:	High performance messaging service toolkit resilient to faults across n
 Summary(pl):	Zestaw narz±dzi do wydajnej komunikacji odpornej na defekty sieci
 Name:		spread
 Version:	3.17.3
-Release:	0.2
+Release:	0.3
 Epoch:		0
-License:	BSD-like, with restrictions
+License:    Spread Open Source License
 Group:		Development
-# from http://www.cnds.jhu.edu/download/download_spread.cgi
+# from http://www.spread.org/download.html
 # (No direct URL)
 Source0:	%{name}-src-%{version}.tar.gz
-# check the license first before removing line below
-NoSource:	0
+# Source0-md5:	2eec25b5adc96fd840aa251e44325f9f
 Patch0:		%{name}-soname.patch
 URL:		http://www.spread.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
