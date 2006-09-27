@@ -2,7 +2,7 @@
 #
 # todo:
 # - add spread user and group or maybe run it as nobody?
-# - change default config file: logging, etc. 
+# - change default config file: logging, etc.
 #
 
 Summary:	High performance messaging service toolkit resilient to faults across networks
@@ -11,14 +11,14 @@ Name:		spread
 Version:	3.17.3
 Release:	0.3
 Epoch:		0
-License:    Spread Open Source License
+License:	Spread Open Source License
 Group:		Development
 # from http://www.spread.org/download.html
 # (No direct URL)
 Source0:	%{name}-src-%{version}.tar.gz
 # Source0-md5:	2eec25b5adc96fd840aa251e44325f9f
 Patch0:		%{name}-soname.patch
-URL:		http://www.spread.com/
+URL:		http://www.spread.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,7 @@ even in case of computer failures and network partitions. Spread is
 designed to encapsulate the challenging aspects of asynchronous
 networks and enable the construction of scalable distributed
 applications, allowing application builders to focus on the
-differentiating components of their application. 
+differentiating components of their application.
 
 %description -l pl
 Spread to zestaw narzêdzi zapewniaj±cych wysoko wydajn± komunikacjê
@@ -41,8 +41,8 @@ Spread funkcjonuje jako ujednolicony kana³ komunikacji dla
 rozproszonych aplikacji i dostarcza dobrze dostrojon± obs³ugê
 multicastów i komunikacji grupowej na poziomie aplikacji. Us³ugi
 Spreada obejmuj± zakres od niezawodnego przekazywania wiadomo¶ci do
-ca³kowicie uporz±dkowanych wiadomo¶ci z gwarancj± dostarczenia,
-nawet w przypadku awarii komputera czy podzia³ów sieci. Spread jest
+ca³kowicie uporz±dkowanych wiadomo¶ci z gwarancj± dostarczenia, nawet
+w przypadku awarii komputera czy podzia³ów sieci. Spread jest
 zaprojektowany do opakowywania wyzywaj±cych aspektów sieci
 asynchronicznych i umo¿liwienia tworzenia skalowanych, rozproszonych
 aplikacji, umo¿liwiaj±c twórcom aplikacji skupienie siê na ró¿ni±cych
