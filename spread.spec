@@ -6,7 +6,7 @@
 #
 
 Summary:	High performance messaging service toolkit resilient to faults across networks
-Summary(pl):	Zestaw narz±dzi do wydajnej komunikacji odpornej na defekty sieci
+Summary(pl.UTF-8):   Zestaw narzÄ…dzi do wydajnej komunikacji odpornej na defekty sieci
 Name:		spread
 Version:	3.17.3
 Release:	0.3
@@ -34,53 +34,53 @@ networks and enable the construction of scalable distributed
 applications, allowing application builders to focus on the
 differentiating components of their application.
 
-%description -l pl
-Spread to zestaw narzêdzi zapewniaj±cych wysoko wydajn± komunikacjê
-odporn± na defekty zarówno zewnêtrznych, jak i wewnêtrznych sieci.
-Spread funkcjonuje jako ujednolicony kana³ komunikacji dla
-rozproszonych aplikacji i dostarcza dobrze dostrojon± obs³ugê
-multicastów i komunikacji grupowej na poziomie aplikacji. Us³ugi
-Spreada obejmuj± zakres od niezawodnego przekazywania wiadomo¶ci do
-ca³kowicie uporz±dkowanych wiadomo¶ci z gwarancj± dostarczenia, nawet
-w przypadku awarii komputera czy podzia³ów sieci. Spread jest
-zaprojektowany do opakowywania wyzywaj±cych aspektów sieci
-asynchronicznych i umo¿liwienia tworzenia skalowanych, rozproszonych
-aplikacji, umo¿liwiaj±c twórcom aplikacji skupienie siê na ró¿ni±cych
-siê komponentach ich aplikacji.
+%description -l pl.UTF-8
+Spread to zestaw narzÄ™dzi zapewniajÄ…cych wysoko wydajnÄ… komunikacjÄ™
+odpornÄ… na defekty zarÃ³wno zewnÄ™trznych, jak i wewnÄ™trznych sieci.
+Spread funkcjonuje jako ujednolicony kanaÅ‚ komunikacji dla
+rozproszonych aplikacji i dostarcza dobrze dostrojonÄ… obsÅ‚ugÄ™
+multicastÃ³w i komunikacji grupowej na poziomie aplikacji. UsÅ‚ugi
+Spreada obejmujÄ… zakres od niezawodnego przekazywania wiadomoÅ›ci do
+caÅ‚kowicie uporzÄ…dkowanych wiadomoÅ›ci z gwarancjÄ… dostarczenia, nawet
+w przypadku awarii komputera czy podziaÅ‚Ã³w sieci. Spread jest
+zaprojektowany do opakowywania wyzywajÄ…cych aspektÃ³w sieci
+asynchronicznych i umoÅ¼liwienia tworzenia skalowanych, rozproszonych
+aplikacji, umoÅ¼liwiajÄ…c twÃ³rcom aplikacji skupienie siÄ™ na rÃ³Å¼niÄ…cych
+siÄ™ komponentach ich aplikacji.
 
 %package libs
 Summary:	Spread client library
-Summary(pl):	Biblioteka kliencka Spreada
+Summary(pl.UTF-8):   Biblioteka kliencka Spreada
 Group:		Libraries
 
 %description libs
 Spread client library.
 
-%description libs -l pl
+%description libs -l pl.UTF-8
 Biblioteka kliencka Spreada.
 
 %package devel
 Summary:	Header files for Spread client library
-Summary(pl):	Pliki nag³ówkowe biblioteki klienckiej Spreada
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki klienckiej Spreada
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
 %description devel
 Header files for Spread client library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki klienckiej Spreada.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki klienckiej Spreada.
 
 %package static
 Summary:	Static Spread client library
-Summary(pl):	Statyczna biblioteka kliencka Spreada
+Summary(pl.UTF-8):   Statyczna biblioteka kliencka Spreada
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static Spread client library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka kliencka Spreada.
 
 %prep
