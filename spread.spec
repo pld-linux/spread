@@ -6,7 +6,7 @@
 #
 
 Summary:	High performance messaging service toolkit resilient to faults across networks
-Summary(pl.UTF-8):   Zestaw narządzi do wydajnej komunikacji odpornej na defekty sieci
+Summary(pl.UTF-8):	Zestaw narządzi do wydajnej komunikacji odpornej na defekty sieci
 Name:		spread
 Version:	3.17.3
 Release:	0.3
@@ -50,7 +50,7 @@ się komponentach ich aplikacji.
 
 %package libs
 Summary:	Spread client library
-Summary(pl.UTF-8):   Biblioteka kliencka Spreada
+Summary(pl.UTF-8):	Biblioteka kliencka Spreada
 Group:		Libraries
 
 %description libs
@@ -61,7 +61,7 @@ Biblioteka kliencka Spreada.
 
 %package devel
 Summary:	Header files for Spread client library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki klienckiej Spreada
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki klienckiej Spreada
 Group:		Development/Libraries
 Requires:	%{name}-libs = %{version}-%{release}
 
@@ -73,7 +73,7 @@ Pliki nagłówkowe biblioteki klienckiej Spreada.
 
 %package static
 Summary:	Static Spread client library
-Summary(pl.UTF-8):   Statyczna biblioteka kliencka Spreada
+Summary(pl.UTF-8):	Statyczna biblioteka kliencka Spreada
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
